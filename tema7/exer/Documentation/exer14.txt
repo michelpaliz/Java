@@ -1,0 +1,8 @@
+
+
+
+
+Ejercicio 14:
+
+    a = (spaces(a.length)+ "").toCharArray();
+    System.out.println(a.getClass().getSimpleName());

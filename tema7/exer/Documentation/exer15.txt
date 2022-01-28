@@ -1,0 +1,3 @@
+https://www.delftstack.com/howto/java/char-array-to-int-java/
+https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array
+
