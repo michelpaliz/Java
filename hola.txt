@@ -1,0 +1,141 @@
+
+
+  "editor.formatOnSave": true,
+    "editor.tokenColorCustomizations": {
+    //    "functions": "#FF0000",
+       
+         "variables": "#ffffff",
+
+        //  "background": "#16181c",
+        //#C678DD; purple
+
+    "textMateRules": [
+        {
+            "scope": 
+            // "variable.parameter.java  ",
+            "storage.type.primitive.java",
+        
+            "settings": {
+                "foreground": "#a3349e",
+                
+                //default color #E06C75
+            },
+
+        },
+
+        {
+         
+            "scope":[
+                "comment",
+                "keyword",
+    
+            ],
+            "settings":{
+                "fontStyle": "italic",
+            }
+
+        },
+        {
+         
+            "scope":[
+                "keyword.operator.assignment.java",
+                "punctuation.terminator.java"
+            //    "punctuation.terminator.java"
+
+            ],
+            "settings":{
+                "foreground": "#f51111",
+            }
+
+        },
+
+        {
+         
+            "scope":[
+                "storage.type.primitive.java",
+                "storage.type.java"
+
+            ],
+            "settings":{
+                // "foreground": "#09bda5",
+                "fontStyle": "underline",
+            }
+
+        }	
+        // {
+        //     // #C678DD default color
+        //     "scope":[
+        //         " storage.modifier.java",
+        //     ],
+        //     "settings":{
+        //         "foreground": " #C678DD ",
+        //     }
+
+        // },
+        // storage.modifier.java
+        // #DF769B
+    
+        
+    //     {
+    //         "scope":"variable.other.definition.java",
+    //         "settings": {
+    //             "foreground": "#f0e9e0",
+    //         }
+    //     },
+    //     {
+    //         "scope":"meta.method.body.java",
+    //         "settings": {
+    //             "foreground": "#287a14",
+    //         }
+    //     },
+    //     {
+    //         "scope": "variable.other.object.java",
+    //         "settings": {
+    //             "foreground": "#FF0000"
+    //         }
+    //     },
+
+       
+    ],
+
+       
+    //  "textMateRules": [
+    //     {
+    //       "name":"variable.paramter",
+    //       "scope": [
+    //         //following will be in italic (=FlottFlott)
+    //         "variable.parameter.java",
+    //         "meta.method.identifier", //class names
+    //         "meta.method.java", //import, export, return…
+    //         "meta.class.body.java", //String, Number, Boolean…, this, super
+    //         "meta.class.java", //static keyword
+    //         "sourse.java", //class keyword
+    //       ],
+    //       "settings": {
+    //         "foreground":"#404040"
+    //       }
+    //     }
+
+    },
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.cursorBlinking": "smooth",
+    "workbench.editor.untitled.hint": "hidden",
+    // "terminal.integrated.fontSize": 15,
+
+    "workbench.colorCustomizations": {
+
+        "terminal.foreground": "#fafafa",
+        "terminal.background": "#000000f6",
+
+        // #282C34 DEFAULT BACKGROUND OF ONE DARK PRO
+        //"#16181c"
+        // "editor.background": "#080818",
+        "editor.background": "#11111b4b",
+        "editorCursor.foreground": "#fcf9f9"
+
+
+    },
+    "editor.suggestSelection": "first",
+    "editor.cursorStyle": "block-outline",
+    "bracketPairColorizer.depreciation-notice": false,
+    "workbench.colorTheme": "One Dark Pro Darker"
