@@ -75,6 +75,7 @@ public class exer29 {
                 System.out.printf(format, value);
             }
             System.out.println();
+
         }
 
     }
