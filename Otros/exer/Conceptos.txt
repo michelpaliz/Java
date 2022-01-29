@@ -1,0 +1,45 @@
+JUEGOS PARA QUE MI BEBÉ PROGRAME 
+
+1.	De la siguiente lista de frutas y verduras, clasifícalas por color y contabilízalas por cada grupo de color, cual mayor sea la cantidad de frutos y verduras de un color señálalo como ganador. 
+Fresa 	Tomate 	Limón 	Pimiento rojo 
+Mango 	Arándanos 	Espinaca 	Melón 
+Zanahoria 	Kiwi 	Manzana 	Berenjena 
+Pimiento amarillo 	Cereza 	Tamarindo 	Banana 
+Papaya 	Almendra 	Pepino 	Papas 
+Frambuesa 	Aguacate 	Piña 	Pera 
+Brócoli 	Cebolla 	Camote 	Uva 
+Naranja 	Sandia 	Lechuga 	Remolacha 
+
+Rojo – fresa, tomate, cereza, manzana, pimiento rojo, frambuesa, sandia
+Amarillo – mango, pimiento amarillo, limón, banana, piña.
+Verde – kiwi, brócoli, aguacate, pepino, espinaca, lechuga, melón.
+Café – almendra, Tamarindo, papas
+Morado – cebolla, camote, uva, berenjena, remolacha, arándanos, 
+Naranja – zanahoria, papaya.
+
+2.	Mi esposa quiere pintarse el cabello, pero yo no estoy convencido, para ello hemos decidido hacer una dinámica, que consiste en pensar en un número del 10 al 20 y del 1 al número que elegí, representarlo por la palabra cabello si el numero que pensaste termina en la mitad de la silaba de la palabra cabello, mi esposa se pinta el cabello y si termina en ca o llo no se lo pinta (Solo será un ejemplo bebé igual me lo pintaré 🥰) y no sé si se pueda programar esto😪
+Ejemplo 
+Pensé el numero 7 
+1 ca
+2 be 
+3 llo
+4 ca                             R: No me lo pinto porque terminó en ca 
+5 be 
+6 llo 
+7 ca 
+
+3.	De la siguiente lista de palabras, diferenciar si es verdadero o falso, su sinónimo.
+El usuario tiene que adivinar la respuesta correcta.
+Cabello – extensiones = falso-
+Acabar – terminar = verdadero
+Armonía – calma = verdadero
+Invariabilidad – uniformidad = verdadero
+Economizar – ahorrar = verdadero
+Destruir – corromper = falso
+Tierno – cariñoso = verdadero
+Importe – soporte = falso
+Llano – llanto = falso
+
+
+
+
