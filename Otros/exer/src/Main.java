@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         myInput = new Scanner(System.in);
 
-        Exer1.execute();
+        // Exer1.execute();
+        Exer2.execute();
 
     }
 

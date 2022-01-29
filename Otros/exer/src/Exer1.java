@@ -1,8 +1,4 @@
-import java.io.LineNumberInputStream;
 import java.util.Arrays;
-
-import javax.naming.spi.DirStateFactory.Result;
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
 public class Exer1 {
 
