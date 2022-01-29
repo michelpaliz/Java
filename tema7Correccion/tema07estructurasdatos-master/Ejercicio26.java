@@ -23,42 +23,42 @@ public class Ejercicio26 {
          System.out.print("Fila: ");
          fila = Main.lector.nextInt();
          Main.lector.nextLine();
-         validado = fila >=0 && fila < FILAS;
-         if(!validado) {
+         validado = fila >= 0 && fila < FILAS;
+         if (!validado) {
             System.out.println("Debe introducir un valor entre 0 y " + (FILAS - 1));
-         } 
-      } while(!validado);
+         }
+      } while (!validado);
       do {
          System.out.print("Columna: ");
          columna = Main.lector.nextInt();
          Main.lector.nextLine();
-         validado = columna >=0 && columna < COLUMNAS;
-         if(!validado) {
+         validado = columna >= 0 && columna < COLUMNAS;
+         if (!validado) {
             System.out.println("Debe introducir un valor entre 0 y " + (COLUMNAS - 1));
          }
-      } while(!validado);
-      System.out.println("m["+fila+"]["+columna+"] = " + m[fila][columna]);
+      } while (!validado);
+      System.out.println("m[" + fila + "][" + columna + "] = " + m[fila][columna]);
 
       do {
          System.out.print("Fila: ");
          fila = Main.lector.nextInt();
          Main.lector.nextLine();
-         validado = fila >=0 && fila < FILAS;
-         if(!validado) {
+         validado = fila >= 0 && fila < FILAS;
+         if (!validado) {
             System.out.println("Debe introducir un valor entre 0 y " + (FILAS - 1));
-         } 
-      } while(!validado);
+         }
+      } while (!validado);
       mostrarFila(m, fila);
 
       do {
          System.out.print("Columna: ");
          columna = Main.lector.nextInt();
          Main.lector.nextLine();
-         validado = columna >=0 && columna < COLUMNAS;
-         if(!validado) {
+         validado = columna >= 0 && columna < COLUMNAS;
+         if (!validado) {
             System.out.println("Debe introducir un valor entre 0 y " + (COLUMNAS - 1));
-         } 
-      } while(!validado);
+         }
+      } while (!validado);
       mostrarColumna(m, columna);
 
       registraTotales(m);
@@ -67,11 +67,12 @@ public class Ejercicio26 {
 
    /**
     * Rellena la matriz m con números enteros aleatorios
+    * 
     * @param m Matriz a rellenar
     */
    public static void rellenarMatriz(int[][] m) {
-      for(int i = 0; i < m.length; i++) {
-         for(int j = 0; j < m[i].length; j++) {
+      for (int i = 0; i < m.length; i++) {
+         for (int j = 0; j < m[i].length; j++) {
             m[i][j] = alea(MIN_NUM, MAX_NUM);
          }
       }
@@ -79,15 +80,16 @@ public class Ejercicio26 {
 
    /**
     * Muestra el contenido de la matriz m
+    * 
     * @param m Matriz a mostrar
     */
    public static void mostrarMatriz(final int[][] m) {
-      for(int i = 0; i < m.length; i++) {
+      for (int i = 0; i < m.length; i++) {
          System.out.print("Fila " + i + ": ");
-         for(int j = 0; j < m[i].length; j++) {
-            if(j!=0) {
-               System.out.print(", ");    
-            }   
+         for (int j = 0; j < m[i].length; j++) {
+            if (j != 0) {
+               System.out.print(", ");
+            }
             System.out.print(m[i][j]);
          }
          System.out.println("");
@@ -96,19 +98,20 @@ public class Ejercicio26 {
 
    /**
     * Muestra la matriz m con un total por fila
+    * 
     * @param m Matriz a mostrar
     */
    public static void mostrarMatrizConTotal(final int[][] m) {
       int suma;
-      for(int i = 0; i < m.length; i++) {
+      for (int i = 0; i < m.length; i++) {
          suma = 0;
          System.out.print("Fila " + i + ": ");
-         for(int j = 0; j < m[i].length; j++) {
-            if(j!=0) {
-               System.out.print(", ");    
-            }   
+         for (int j = 0; j < m[i].length; j++) {
+            if (j != 0) {
+               System.out.print(", ");
+            }
             System.out.print(m[i][j]);
-            suma += m[i][j]; 
+            suma += m[i][j];
          }
          System.out.print("\t Total = " + suma);
          System.out.println("");
@@ -117,13 +120,14 @@ public class Ejercicio26 {
 
    /**
     * Muestra la fila indicada de la matriz m
-    * @param m Matriz 
+    * 
+    * @param m    Matriz
     * @param fila Fila a mostrar
     */
    public static void mostrarFila(final int[][] m, int fila) {
-      System.out.print("m["+fila+"] = [");
-      for(int i = 0; i < m[fila].length; i++) {
-         if(i!=0) {
+      System.out.print("m[" + fila + "] = [");
+      for (int i = 0; i < m[fila].length; i++) {
+         if (i != 0) {
             System.out.print(", ");
          }
          System.out.print(m[fila][i]);
@@ -131,16 +135,16 @@ public class Ejercicio26 {
       System.out.println("]");
    }
 
-
    /**
     * Muestra la columna indicada de la matriz
-    * @param m Matriz a mostrar
+    * 
+    * @param m       Matriz a mostrar
     * @param columna Columna a mostrar
     */
    public static void mostrarColumna(final int[][] m, int columna) {
-      System.out.print("m[?]["+columna+"] = [");
-      for(int i = 0; i < m.length; i++) {
-         if(i!=0) {
+      System.out.print("m[?][" + columna + "] = [");
+      for (int i = 0; i < m.length; i++) {
+         if (i != 0) {
             System.out.print(", ");
          }
          System.out.print(m[i][columna]);
@@ -150,29 +154,31 @@ public class Ejercicio26 {
 
    /**
     * Devuelve la matriz traspuesta de la matriz indicada como parámetro
+    * 
     * @param m Matriz origen
     * @return Matriz traspuesta
     */
    public static int[][] traspuesta(final int[][] m) {
       int[][] t = new int[m[0].length][m.length];
-      for(int i = 0; i < m.length; i++) {
-         for(int j = 0; j < m[i].length; j++) {
+      for (int i = 0; i < m.length; i++) {
+         for (int j = 0; j < m[i].length; j++) {
             t[j][i] = m[i][j];
          }
       }
       return t;
    }
-   
+
    /**
     * Obtiene el valor máximo de la matriz m
+    * 
     * @param m Matriz a buscar
     * @return Valor máximo de la matriz
     */
    public static int max(final int[][] m) {
       int max = Integer.MIN_VALUE;
-      for(int i = 0; i < m.length; i++) {
-         for(int j = 0; j < m[i].length; j++) {
-            if(m[i][j] > max) {
+      for (int i = 0; i < m.length; i++) {
+         for (int j = 0; j < m[i].length; j++) {
+            if (m[i][j] > max) {
                max = m[i][j];
             }
          }
@@ -182,14 +188,15 @@ public class Ejercicio26 {
 
    /**
     * Obtiene el valor mínimo de la matriz m
+    * 
     * @param m Matriz a buscar
     * @return Valor mínimo de la matriz
     */
    public static int min(final int[][] m) {
       int min = Integer.MAX_VALUE;
-      for(int i = 0; i < m.length; i++) {
-         for(int j = 0; j < m[i].length; j++) {
-            if(m[i][j] < min) {
+      for (int i = 0; i < m.length; i++) {
+         for (int j = 0; j < m[i].length; j++) {
+            if (m[i][j] < min) {
                min = m[i][j];
             }
          }
@@ -199,23 +206,25 @@ public class Ejercicio26 {
 
    /**
     * Calcula la media aritmética de los elementos de la matriz m
+    * 
     * @param m Matriz origen
     * @return Media aritmética de la matriz
     */
    public static float media(final int[][] m) {
       int sum = 0;
       int cont = 0;
-      for(int i = 0; i < m.length; i++) {
-         for(int j = 0; j < m[i].length; j++) {
+      for (int i = 0; i < m.length; i++) {
+         for (int j = 0; j < m[i].length; j++) {
             sum += m[i][j];
             cont++;
          }
       }
-      return (float)sum/cont;
+      return (float) sum / cont;
    }
 
    /**
     * Genera un número entero aleatorio entre min y max
+    * 
     * @param min Número mínimo a ser generado
     * @param max Número máximo a ser generado
     * @return Número entero aleatorio generado
@@ -226,16 +235,17 @@ public class Ejercicio26 {
    }
 
    /**
-    * Calcula la suma por fila y la guarda en la última columna 
+    * Calcula la suma por fila y la guarda en la última columna
+    * 
     * @param m Matriz origen
     */
    public static void registraTotales(int[][] m) {
       int sum;
-      for(int i = 0; i < m.length; i++) {
+      for (int i = 0; i < m.length; i++) {
          sum = 0;
-         for(int j = 0; j < m[i].length; j++) {
-            if(j == m[i].length -1) {
-               m[i][j] = sum;               
+         for (int j = 0; j < m[i].length; j++) {
+            if (j == m[i].length - 1) {
+               m[i][j] = sum;
             } else {
                sum += m[i][j];
             }
