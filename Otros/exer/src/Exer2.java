@@ -12,33 +12,38 @@ public class Exer2 {
 
     }
 
-    public static void execute() {
+    public static void main(String[] args) {
 
         System.out.println(randomGeneratorMath(MAX, MIN));
 
         int random = randomGeneratorMath(MAX, MIN);
-        // int ca = 0;, int be =1; int llo = 2;
+        // int ca = 0; int be =1; int llo = 2;
+
         String ca = "ca";
         String be = "be";
         String llo = "llo";
 
-         int division = random % 3;
-        System.out.println(division);
-        // int resultado = division * 3;
-        // System.out.println(resultado);
+        int contador = 0;
 
-        for(int i = 0; i<resultado; i++ ){
-                  System.out.printf(ca + be + llo);
-        for(int j = resultado; j < random; j++){
-        if ((( random - resultado) = 1)){
-        System.out.print(ca);
-        }else if( (random - resultado) = 2){
-        System.out.println(ca + be);
-        }else if ((random - resultado)= 3){
-        System.out.println(ca+be+llo);
-        }
-        }
+        System.out.println("Esto es random " + random);
 
+        while (contador < random) {
+
+            if (contador < random) {
+                System.out.print(ca + " ");
+                contador++;
+                if (contador < random) {
+                    System.out.print(be + " ");
+                    contador++;
+                    if (contador < random) {
+                        System.out.println(llo + " \n");
+                        contador++;
+
+                    }
+
+                }
+
+            }
         }
 
     }
