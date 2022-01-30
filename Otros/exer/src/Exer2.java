@@ -51,7 +51,7 @@ public class Exer2 {
 
         // *Calcular el resto de la division
         int contRandom = random - 1; // *Le restamos 1 porque el cero cuenta como un valor mas asi que seria el
-        // * (numero random - 1) para que nos cuadre la oporecacion
+        // * (numero random - 1) para que nos cuadre la operacion
 
         int resto = (contRandom) % 3;
         String frase = "Mi nenita no se pinta el cabello";
