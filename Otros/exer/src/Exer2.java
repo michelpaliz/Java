@@ -14,8 +14,7 @@ public class Exer2 {
 
     public static void main(String[] args) {
 
-        System.out.println(randomGeneratorMath(MAX, MIN));
-
+        // ~JUEGO
         int random = randomGeneratorMath(MAX, MIN);
         // int ca = 0; int be =1; int llo = 2;
 
@@ -24,10 +23,14 @@ public class Exer2 {
         String llo = "llo";
 
         int contador = 0;
+        System.out.print("*************************************************");
+        System.out.println(
+                "\nSE ESCOGERA UN NUMERO ALEATORIO DEL 10 AL 30 Y SE CORTARA LA FRASE EN LA ULTIMA INTERACCION DEL NUMERO DE VECES ESCOGIDO ALEATORIAMENTE, SI LA ULTIMA SILABA ES BE ENTONCES GANAS Y SI LA ULTIMA ES CA O LLO ENTONCES PIERDES");
+        System.out.println("*************************************************");
+        System.out.println("Esto es el numero aleatorio " + random);
+        System.out.println("Se  mostrara por pantalla repetido el numero de veces por silaba\n");
 
-        System.out.println("Esto es random " + random);
-
-        while (contador < random) {
+        while (contador < (random)) {
 
             if (contador < random) {
                 System.out.print(ca + " ");
@@ -44,6 +47,22 @@ public class Exer2 {
                 }
 
             }
+        }
+
+        // *Calcular el resto de la division
+        int contRandom = random - 1; // *Le restamos 1 porque el cero cuenta como un valor mas asi que seria el
+        // * (numero random - 1) para que nos cuadre la oporecacion
+
+        int resto = (contRandom) % 3;
+        String frase = "Mi nenita no se pinta el cabello";
+        String frase2 = "Mi nenita se pinta pero no lo va hacer de todas maneras";
+
+        if (resto == 0) {
+            System.out.println(" \n\nLa ultima silaba es  " + ca + "\n" + frase);
+        } else if (resto == 1) {
+            System.out.println(" \n\nLa ultima silaba es  " + be + "\n" + frase2);
+        } else if (resto == 2) {
+            System.out.println(" \n\nLa ultima silaba es  " + llo + "\n" + frase);
         }
 
     }
