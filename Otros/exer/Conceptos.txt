@@ -35,6 +35,8 @@ Acabar – terminar = verdadero
 Armonía – calma = verdadero
 Invariabilidad – uniformidad = verdadero
 Economizar – ahorrar = verdadero
+
+
 Destruir – corromper = falso
 Tierno – cariñoso = verdadero
 Importe – soporte = falso
