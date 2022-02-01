@@ -1,5 +1,7 @@
 import java.util.Arrays;
 
+import javax.sound.sampled.SourceDataLine;
+
 //MATRIZ
 public class twoArray {
 
@@ -7,7 +9,6 @@ public class twoArray {
     public static final int NUM_COL = 10;
 
     public static void main(String[] args) {
-
         // We have to create a two dimensional arrays
 
         int a[][] = new int[5][5];
