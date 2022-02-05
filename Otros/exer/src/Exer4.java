@@ -61,7 +61,6 @@ public class Exer4 {
 
     public static void mostrarTabla(final double[][] m) {
 
-        // Mediante las sumas de las variables sumaProducto y sumaMes
         double[] totalMediaProducto = new double[MESES];// *Matriz creada para el importe total de los importes
                                                         // mensuales
         double[] totalMediaMes = new double[MESES];
@@ -70,6 +69,8 @@ public class Exer4 {
         int sumaMes = 0;// !variable para la suma por columna
         double maxProducto[] = new double[PRODUCTOS];
         double minProducto[] = new double[PRODUCTOS];
+        double maxMes[] = new double[PRODUCTOS];
+        double minMes[] = new double[PRODUCTOS];
         // +EMPEZAMOS HACER LAS OPERACIONES
         int contador = 0;
         String formato = "\t|%.3S|";
@@ -104,12 +105,13 @@ public class Exer4 {
             for (int j = 0; j < m[i].length; j++) {
                 System.out.printf("%05.2f$  ", m[i][j]); /// el cero de adelante define el numero de ceros que se
                                                          /// tendran que poner en caso de llegar a la longitud 4= (5-1)
-                // *operaciones
+                // calcular el maximo
                 if (maxProducto[i] < m[i][j]) {
                     maxProducto[i] = m[i][j];// rellenamos el array
                 }
-
+                // suma total
                 sumaProducto += ((m[i][j]));
+                // calcular media
                 totalMediaProducto[j] = 0;
                 totalMediaProducto[j] += (m[i][j]);
 
@@ -129,10 +131,11 @@ public class Exer4 {
                 minProducto = min_row(m);
                 resul1 = minProducto[i];
             }
-            // imprimos medias superadas por productos
-            int cont = 0;
+            // imprimos medias superadas por producto
             // System.out.println("esto es total media" +
             // Arrays.toString(totalMediaProducto));
+            // !Matriz creada para sacar los productos mayores de la media.
+            int cont = 0;
             for (int z = 0; z < MESES; z++) {
                 if (totalMediaProducto[z] > media) {
                     cont++;
@@ -141,7 +144,6 @@ public class Exer4 {
 
             System.out.printf("%05.2f$\t %05.2f$\t\t(%d) \n", result, resul1, cont);
 
-            // System.out.println("Esto es media" + media);
         }
 
         // for (double element : min_row(m)) {
