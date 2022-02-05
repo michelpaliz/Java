@@ -13,9 +13,6 @@ public class Exer4 {
         return min + (max - min) * r.nextDouble();
     }
 
-    /**
-     * >Vamos a rellenar la matriz con importes aleatorios
-     */
     public static void rellenarMatriz(double[][] m) {
 
         for (int i = 0; i < m.length; i++) {
