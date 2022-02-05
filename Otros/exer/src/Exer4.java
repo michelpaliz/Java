@@ -142,7 +142,6 @@ public class Exer4 {
                 resul1 = minProducto[i];
             }
             // imprimos medias superadas por productos
-            // double nProductos = 0;
             int cont = 0;
             // System.out.println("esto es total media" +
             // Arrays.toString(totalMediaProducto));
@@ -152,9 +151,9 @@ public class Exer4 {
                 }
             }
 
-            System.out.printf("%05.2f$\t %05.2f$ (%d) \n", result, resul1, cont);
+            System.out.printf("%05.2f$\t %05.2f$\t\t(%d) \n", result, resul1, cont);
 
-            System.out.println("Esto es media" + media);
+            // System.out.println("Esto es media" + media);
         }
 
         // for (double element : min_row(m)) {
