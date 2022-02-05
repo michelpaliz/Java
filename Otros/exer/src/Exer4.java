@@ -1,14 +1,10 @@
 import java.util.Random;
 import java.util.Scanner;
+
 import java.util.Arrays;
 // math imports
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-
-import javax.imageio.ImageIO;
-import javax.naming.spi.DirStateFactory.Result;
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-import javax.swing.text.html.MinimalHTMLWriter;
 
 public class Exer4 {
 
@@ -65,10 +61,21 @@ public class Exer4 {
         return result;
     }
 
+    public static int superanMedia(final double[][] notas, double media, int modulo) {
+        int cont = 0;
+        for (int i = 0; i < notas.length; i++) {
+            if (notas[modulo][i] > media) {
+                cont++;
+            }
+        }
+        return cont;
+    }
+
     public static void mostrarTabla(final double[][] m) {
 
         // Mediante las sumas de las variables sumaProducto y sumaMes
-        double[] totalPorMes = new double[MESES];// *Matriz creada para el importe total de los importes mensuales
+        double[] totalMediaProducto = new double[MESES];// *Matriz creada para el importe total de los importes
+                                                        // mensuales
         double[] totalMediaMes = new double[MESES];
         // variables para realizar las operaciones de arriba
         double sumaProducto = 0;// !variable para la suma por fila
@@ -102,7 +109,8 @@ public class Exer4 {
             }
         }
 
-        System.out.printf("\t|%-4s| \t|%-4s| |%4s| |%4s|  \n", "Suma", "Media", "Maxima", "Minimo");
+        System.out.printf("\t|%-4s| \t|%-4s| |%4s| |%4s| |%4s|  \n", "Suma", "Media", "Maxima", "Minimo",
+                "SuperanMedia");
         for (int i = 0; i < m.length; i++) {
             System.out.printf("Producto " + (i + 1) + "\t");
             for (int j = 0; j < m[i].length; j++) {
@@ -114,10 +122,12 @@ public class Exer4 {
                 }
 
                 sumaProducto += ((m[i][j]));
+                totalMediaProducto[j] = 0;
+                totalMediaProducto[j] += (m[i][j]);
 
             }
             double media = sumaProducto / PRODUCTOS;
-            // !imprimos por pantalla las filas y columnas (SUMA,MEDIA,MAXIMO)
+            // !imprimos por pantalla las filas y columnas (SUMA,MEDIA,MAXIMO,SUPERANMEDIA)
             System.out.printf("%-2.2f$\t %-2.2f$\t", sumaProducto, media);
             sumaProducto = 0;// Resetemos la suma a 0
             // Calcular el maximo de las filas del array
@@ -131,9 +141,20 @@ public class Exer4 {
                 minProducto = min_row(m);
                 resul1 = minProducto[i];
             }
+            // imprimos medias superadas por productos
+            // double nProductos = 0;
+            int cont = 0;
+            // System.out.println("esto es total media" +
+            // Arrays.toString(totalMediaProducto));
+            for (int z = 0; z < MESES; z++) {
+                if (totalMediaProducto[z] > media) {
+                    cont++;
+                }
+            }
 
-            System.out.printf("%.2f\t %.2f\n", result, resul1);
+            System.out.printf("%05.2f$\t %05.2f$ (%d) \n", result, resul1, cont);
 
+            System.out.println("Esto es media" + media);
         }
 
         // for (double element : min_row(m)) {
