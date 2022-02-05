@@ -1,10 +1,4 @@
 import java.util.Random;
-import java.util.Scanner;
-
-import java.util.Arrays;
-// math imports
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 public class Exer4 {
 
@@ -13,8 +7,6 @@ public class Exer4 {
     public static final int MESES = 5;
     public static final double MIN_NUM = 0;
     public static final double MAX_NUM = 100;
-    public static Scanner myInput = new Scanner(System.in);
-    public static int user;
 
     public static double alea(double min, double max) {
         Random r = new Random();
@@ -34,10 +26,6 @@ public class Exer4 {
             }
         }
 
-    }
-
-    public static enum Mes {
-        ENERO, FEBREO, MARZO, ABRIL, MAYO
     }
 
     public static double[] min_row(double[][] n) {
