@@ -16,37 +16,37 @@ public class Exer5 {
     public enum Preguntas {
         ONE {
             public String toString() {
-                return "¿Cual fue el día mas feliz para el?";
+                return "****¿Cual fue el día mas feliz para el?";
             }
         },
         TWO {
             public String toString() {
-                return "¿Que es lo que mas desea el?";
+                return "****¿Que es lo que mas desea el?";
             }
         },
         THREE {
             public String toString() {
-                return "¿Cual es el sobrenombre que mas le gusta?";
+                return "****¿Cual es el sobrenombre que mas le gusta?";
             }
         },
         FOUR {
             public String toString() {
-                return "¿Que le gusta hacer en tiempo libre?";
+                return "****¿Que le gusta hacer en tiempo libre?";
             }
         },
         FIVE {
             public String toString() {
-                return "¿Cuantos hijos quiere tener?";
+                return "****¿Cuantos hijos quiere tener?";
             }
         },
         SIX {
             public String toString() {
-                return "¿Que es lo que mas desea el?";
+                return "****¿Que es lo que mas desea el?";
             }
         },
         SEVEN {
             public String toString() {
-                return "¿Elige una opcion  ?";
+                return "****¿Elige una opcion  ?";
             }
         }
     }
@@ -72,6 +72,7 @@ public class Exer5 {
                 System.out.println(
                         "1.El dia que me comi a mi chepita\n2.El dia que conoci a mi princesita\n3.El dia que te pegue");
                 user = Integer.parseInt(myInput.nextLine());
+                numero = 1;
                 break;
             case 2:
                 System.out.println(Preguntas.TWO);
@@ -131,7 +132,6 @@ public class Exer5 {
                 } else {
                     System.out.println("Respuesta Incorrecta");
                     perdido++;
-
                 }
                 break;
             case 2:
@@ -236,6 +236,7 @@ public class Exer5 {
                     break;
                 case 3:
                     System.out.println("Hasta pronto!");
+                    correct = !correct;
                     break;
             }
 
